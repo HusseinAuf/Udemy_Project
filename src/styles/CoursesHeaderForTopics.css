@@ -1,0 +1,27 @@
+
+  .header-courses-topic h1{
+    margin: 10px 0%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height:29px;
+
+  }
+  .header-courses-topic .description{
+    margin: 10px 0%;
+    width: 80%;
+    font-size: 17px;
+    line-height:22px;
+    font-weight: 400;
+  }
+  .header-courses-topic button{
+    margin: 10px 0%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 0.5px solid black;
+    background-color:white;
+    cursor: pointer;
+  }
+  .header-courses-topic button:hover{
+    background-color:rgb(247, 247, 247);
+  }

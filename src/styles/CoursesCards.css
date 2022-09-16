@@ -1,0 +1,41 @@
+.courses-list {
+    margin:20px 0%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    max-width: max-content;
+  }
+  .course {
+    max-width: min-content;
+    cursor: pointer;
+  }
+  .course img {
+    margin: 10px;
+    max-width: 210px;
+  }
+
+  .course p {
+    margin: 0px 20px;
+  }
+  .course .author {
+    margin: 20px;
+    margin-top:5px;
+    margin:5px 20px;
+    font-size: 13px;
+    color: #464545;
+  }
+  .course .rating  {
+    color: rgb(180,105,14);
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0px;
+    margin-left:20px;
+}
+.course .rating .stars-rating {
+    font-size: 15px;
+}
+  .course .price{
+    margin:10px 20px;
+    font-weight: 700;
+  }

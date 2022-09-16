@@ -1,0 +1,50 @@
+.navbar-course {
+    z-index: 100; 
+    height: 76px;
+    width: 100%;
+    background-color:rgb(28,29,31);
+    position: fixed;
+    top:0px;
+    padding: 15px 25px;
+    box-shadow: 5px -2px 20px -4px rgba(0,0,0,.8);
+}
+.navbar-course .title {
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.navbar-course .rating-info {
+    margin-bottom: 5px;
+}
+.navbar-course .rating  {
+    color: rgb(243,202,140);
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.navbar-course .rating i {
+    font-size: 11.5px;
+}
+.navbar-course .rating-count {
+    color: rgb(206,192,252);
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 6px;
+}
+.navbar-course .rating-count .text {
+    text-decoration: underline;
+}
+.navbar-course .enroll-count {
+    color: rgb(255, 255, 255);
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 10px;
+}

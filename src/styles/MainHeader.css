@@ -1,0 +1,53 @@
+.header-container {
+    z-index: 200;
+    position: relative;
+    height: 400px;
+    max-width: 1350px;
+    margin: auto;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+  }
+  .header-container .alarm {
+    max-height: 250px;
+    width: 170px;
+    margin: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+  }
+  .header-container .header-text {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 60px;
+    max-width: 450px;
+     height: min-content;
+    top: 50px;
+    box-shadow: 0px 0px 6px #888888;
+  }
+  .header-container .header-text h1 {
+    font-family:  SuisseWorks, Georgia, Times, "times new roman", serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 600;
+    font-size: 30px;
+    font-weight:bold;
+  }
+.header-container .header-text p {
+    font-size: 20px;
+}
+@media only screen and (max-width: 840px) {
+    .header-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+    }
+    .header-container .alarm {
+      position: absolute;
+      top: 10px;
+      right: 40%;
+      margin: 0px;
+    }
+    .header-container .header-text {
+      position: absolute;
+      top: 200px;
+    }
+  }

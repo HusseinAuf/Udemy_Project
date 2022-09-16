@@ -1,0 +1,24 @@
+ .course-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+ }
+ .course-details {
+    grid-area: overlap;
+    float: left;
+ }
+ .course-card {
+   z-index: 101;
+    background-color: rgb(255,255,255);
+    grid-area: overlap;
+    width: 22.5%;
+    align-self: right;
+    justify-self: right;
+    margin-right: 14%;
+    margin-top: 30px;
+    width:341.812px;
+}
+
+
+

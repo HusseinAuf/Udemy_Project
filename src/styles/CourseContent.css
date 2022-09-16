@@ -1,0 +1,100 @@
+.course-content {
+    margin: 30px 14%;
+    display: block;
+    max-width: 700px;
+}
+.course-content .head {
+    display: none;
+    display:block;
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+.course-content .content-info {
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.course-content .expand-sections {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #401b9c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    float: right;
+    cursor: pointer;
+    padding-top:2px;
+}
+.course-content .content-table details > summary {
+    list-style: none;
+}
+.course-content .content-table details > summary::-webkit-details-marker {
+    display: none;
+}
+.course-content .content-table summary{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    border: 0.05px solid rgb(209,215,220);
+    padding:16px 34px;
+    background-color: rgb(247,249,250);
+}
+.course-content .content-table summary .text {
+    margin-left: 20px;
+}
+.course-content .content-table .lesson .text {
+    margin-left: 20px;
+}
+.course-content .content-table .lesson {
+    padding:16px 34px;
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-right: 0.05px solid rgb(209,215,220);
+    border-left: 0.05px solid rgb(209,215,220);
+}
+.course-content .content-table .show-more {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    padding:13px 34px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(28,29,31);
+}
+.course-content .content-table .show-more:hover {
+    background-color:#f2f2f2;
+}
+
+/* summary {
+    display: block;
+  } */
+  
+  summary::before {
+    color:#1c1d1f;
+    margin-left: 1ch;
+    display: inline-block;
+    transition: 0.3s;
+    transform: rotate(90deg);
+    font-size: 30px;
+    padding:0px;
+    margin:0px;
+    vertical-align: middle;
+    content: '\203A'; 
+  }
+  
+  details[open] summary::before {
+    transform: rotate(-90deg);
+  }

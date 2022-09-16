@@ -1,0 +1,154 @@
+
+.course-card img{
+    width: 100%;
+}
+.course-card {
+    background-color: #1c1d1f;
+    height: min-content;
+}
+.course-card .details {
+    background-color: white;
+    padding:20px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+.course-card .details .price{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.course-card .details .original-price,
+.course-card .details .discount
+{
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.course-card .details .original-price{
+    -webkit-text-decoration-line: line-through; 
+    text-decoration-line: line-through; 
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.course-card .details .days-left {
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:rgb(186, 29, 29);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.course-card .details button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-top: 8px;
+}
+.course-card .details .add-to-cart {
+    background-color:rgb(164,53,240);
+    color:white;
+    border: none;
+}
+.course-card .details .add-to-cart:hover {
+    background-color:rgb(140, 48, 202);    
+}
+
+.course-card .details .buy-now {
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: 0.1px solid black;
+}
+.course-card .details .buy-now:hover {
+    background-color:rgb(240, 240, 240);
+}
+.course-card .details .money-back{
+    text-align: center;
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 15px 0px 20px;
+}
+.course-card .details .course-include h1 {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+.course-card .details .course-include span {
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 15px;
+}
+.course-card .details .course-include svg {
+    padding-bottom: 1.5px;
+    height: min-content;
+}
+.course-card .details .course-include div {
+    margin-bottom: 6px;
+}
+.course-card .details .share {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.course-card .details .share span {
+    margin-right: 6%;
+    text-decoration: underline;
+    
+}
+.course-card .details .udemy-business{
+    padding-top: 25px;
+    border-top:0.1px solid rgb(209,215,220);
+}
+.course-card .details .udemy-business h1{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23px;
+}
+.course-card .details .udemy-business p{
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.course-card .details .udemy-business button{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: 0.1px solid black;
+    padding: 15px;
+    font-size: 14;
+    font-weight: 700;
+    line-height: 17px;
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";;
+}
+.course-card .details .udemy-business button:hover{
+    background-color:rgb(240, 240, 240);
+}
+@media only screen and (max-width: 1400px) {
+    .course-card {
+        display: none;
+    }
+}

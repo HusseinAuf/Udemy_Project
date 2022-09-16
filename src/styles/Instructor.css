@@ -1,0 +1,103 @@
+.instructor{
+    max-width: 700px;
+    margin: 20px 14%;
+}
+.instructor h1{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.instructor .instructor-info .name {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: rgb(86,36,208);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+} 
+.instructor .instructor-info .intro {
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.instructor .instructor-info .profile {
+    display: flex;
+    flex-direction: row;
+}
+.instructor .instructor-info img {
+    border-radius: 50%;
+    width: 120px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.instructor .instructor-info .info {
+    display: flex;
+    flex-direction: column;
+}
+.instructor .instructor-info .info .item {
+    padding: 4.5px 0px;
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.instructor .instructor-info .info svg {
+    margin-right: 15px;
+}
+.instructor .description {
+    margin:8px 0px;
+}
+.instructor .description p{
+    margin:7px 0px;
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.instructor .description .description-more {
+    overflow: hidden;
+    height: 200px;
+    mask-image: linear-gradient(to bottom, black 150px, transparent 100%);
+}
+.instructor .description .description-less {
+    overflow: visible;
+    height: auto;
+    mask-image: none;
+}
+.instructor .description button {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    border: none;
+    color: rgb(64,27,156);
+    background-color: white;
+    display: block;
+}
+.instructor .description .btn-show-more::after {
+    color: rgb(64,27,156);
+    content: '\203A'; 
+    transform: rotate(90deg);
+    margin-left: 1ch;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.instructor .description .btn-show-less::after {
+    color: rgb(64,27,156);
+    content: '\203A'; 
+    transform: rotate(270deg);
+    margin-left: 1ch;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+}

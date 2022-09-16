@@ -1,0 +1,23 @@
+.like-and-dislike .active {
+    display: inline-block;
+}
+.like-and-dislike .inactive{
+    display: none;
+}
+.like, .dislike {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.like {
+    margin-right: 25px;
+}
+.dislike .inactive , .dislike .active{
+    -webkit-transform: rotate(180deg);
+}

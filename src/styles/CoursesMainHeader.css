@@ -1,0 +1,12 @@
+.intro-text {
+    margin: 30px 6.2%;
+  }
+.intro-text h1 {
+    font-family:  SuisseWorks, Georgia, Times, "times new roman", serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 32px;
+}
+.intro-text p {
+    font-size: 20px;
+}

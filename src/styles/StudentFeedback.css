@@ -1,0 +1,59 @@
+.student-feedback {
+    max-width: 700px;
+    margin: 20px 14%;
+}
+.student-feedback h1 {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #1c1d1f;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.student-feedback .rating-state .average-rate .number{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: rgb(180,105,14);
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+.student-feedback .rating-state .average-rate .text{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: rgb(180,105,14);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 8px;
+}
+.student-feedback .rating-state {
+    display: flex;
+    flex-direction: row;
+}
+.student-feedback .rating-state .average-rate {
+    display: flex;
+    flex-direction: column;
+}
+.student-feedback .rating-state .rate-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 30px;
+}
+.student-feedback .rating-state .rate-details .count-stars {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7px;
+}
+.student-feedback .rating-state .rate-details .gragh{
+    width: 60%;
+    height: 10px;
+    background-color: gray;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+.student-feedback .rating-state .rate-details .percent{
+    text-decoration: underline;
+    color:rgb(113,71,215);
+    margin-left: 6px;
+}
