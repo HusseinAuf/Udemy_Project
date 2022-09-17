@@ -7,9 +7,7 @@ import CoursesMainHeader from "../../widgets/CoursesMainHeader";
 import CoursesHeaderForTopics from "../../widgets/CoursesHeaderForTopics";
 import CoursesCards from "../../widgets/CoursesCards";
 import Footer from '../../widgets/Footer';
-import {python_header} from '../../../constants/db.js'
 const HomePage = ({data , searchText}) => {
-    //  console.log(data.length);
     return (
         <div>
             <section className="header-section">
@@ -18,7 +16,7 @@ const HomePage = ({data , searchText}) => {
             <section className="courses-section">
                 <CoursesMainHeader />
                 <div className="courses-topics">
-                    <CoursesHeaderForTopics data = {python_header}/>
+                    <CoursesHeaderForTopics/>
                     {
                         data.length === 0?
                         <div className="spinner">
