@@ -1,5 +1,5 @@
 import "../../../styles/CoursePage.css"
-// import { useParams } from "react-router-dom";
+import Spinner from 'react-bootstrap/Spinner';
 import CoursePageHeader from "../../widgets/CoursePageHeader";
 import CourseOverview from "../../widgets/CourseOverview";
 import CourseContent from "../../widgets/CourseContent";
@@ -12,6 +12,13 @@ import StudentFeedback from "../../widgets/StudentFeedback";
 import Reviews from "../../widgets/Reviews";
 import Footer from "../../widgets/Footer";
 const CoursePage = ({data}) => {
+    if(data.length === 0){
+        return (
+          <div className="spinner">
+            <Spinner animation="border"/>
+          </div>
+        )
+    }
     return (
         <div className="course-page">
             <NavbarCourse data={data}/>

@@ -17,13 +17,6 @@ const App = () => {
           setdata(json);
         });
     },[url])
-  if(data.length === 0){
-    return (
-      <div className="spinner">
-        <Spinner animation="border"/>
-      </div>
-    )
-  }
   return (
     <div className='app'>
       <PagesNavbar setSearchText = {setSearchText}/>

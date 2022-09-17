@@ -122,11 +122,8 @@
   position: flex;
   background-color: white;
   float: left;
-  border: none;
+  border: 1px solid black;
   padding: 6px 8px;
-  outline-style: inset;
-  outline-color: black;
-  outline-width: 1px;
   cursor: pointer;
 }
 i {

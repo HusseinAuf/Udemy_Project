@@ -32,7 +32,7 @@ const CoursesCards = ({data , searchText}) =>{
                             <StarsRating rate={course["rate"]} color={"rgb(229,152,25)"}/>
                         </span>
                     </span>
-                    <p className="price">{course["price"]}</p>
+                    <p className="price">E£{course["price"]}</p>
                 </div>
                 )})
         }
