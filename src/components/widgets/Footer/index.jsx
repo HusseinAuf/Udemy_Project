@@ -1,9 +1,24 @@
 import "../../../styles/Footer.css";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useInView } from 'react-intersection-observer';
 const Footer = ({data}) => {
     let {courseId} = useParams();
+    const { ref: myRef, inView: isImagVisible } = useInView();
+    useEffect(() => {
+        if(isImagVisible){
+            const courseCard = document.querySelector('.course-card .details');
+            courseCard.style.position = "static";
+        }
+        else{
+            const courseCard = document.querySelector('.course-card .details');
+            courseCard.style.position = "fixed";
+            courseCard.style.top = "4px";
+            courseCard.style.width = "341.800px";
+        }
+    }, [isImagVisible])
     return (
-        <div className="footer">
+        <div className="footer" ref={myRef}>
             <span className="companies">
                 <span className="text">
                     <span>Top companies choose </span>

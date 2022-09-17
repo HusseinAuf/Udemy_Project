@@ -91,6 +91,9 @@
     color:white;
     padding-right: 7.5px;
 }
+.course-header .details .info{
+    display: block;
+}
 .course-header .details .last-update,
 .course-header .details .language,
 .course-header .details .subitile {
@@ -101,8 +104,103 @@
     line-height: 20px;
     padding-right: 15px;
 }
+.course-header .details .price-details {
+    display: none;
+}
+.course-header .details .price{
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.course-header .details .original-price,
+.course-header .details .discount
+{
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.course-header .details .original-price{
+    -webkit-text-decoration-line: line-through; 
+    text-decoration-line: line-through; 
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.course-header .details button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-top: 8px;
+}
+.course-header .details .add-to-cart {
+    background-color:rgb(164,53,240);
+    color:white;
+    border: none;
+    display: none;
+}
+.course-header .details .add-to-cart:hover {
+    background-color:rgb(140, 48, 202);    
+}
+.course-header .details .money-back{
+    text-align: center;
+    font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 15px 0px 20px;
+    display: none;
+}
+.course-header .details .share {
+    font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: none;
+}
+.course-header .details .share span {
+    text-decoration: underline;
+    
+}
 @media only screen and (max-width: 800px) {
     .course-header .preview-img {
         display: block;
+    }
+    .course-header .details .share {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .course-header .details .money-back {
+        display: block;
+    }
+    .course-header .details .add-to-cart {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .course-header .details .price-details {
+        display: block;
+        margin-top: 30px;
+    }
+    .course-header .details .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
     }
 }

@@ -1,5 +1,5 @@
 import "../../../styles/CoursePage.css"
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import CoursePageHeader from "../../widgets/CoursePageHeader";
 import CourseOverview from "../../widgets/CourseOverview";
 import CourseContent from "../../widgets/CourseContent";
@@ -12,13 +12,12 @@ import StudentFeedback from "../../widgets/StudentFeedback";
 import Reviews from "../../widgets/Reviews";
 import Footer from "../../widgets/Footer";
 const CoursePage = ({data}) => {
-    let {courseId} = useParams();
     return (
         <div className="course-page">
             <NavbarCourse data={data}/>
             <div className="course-details">
                 <CoursePageHeader data={data}/>
-                <CourseOverview data={data[courseId]["overview"]}/>
+                <CourseOverview data={data}/>
                 <CourseContent data={data}/>
             </div>
             <div className="course-card">

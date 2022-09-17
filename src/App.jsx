@@ -5,6 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/pages/HomePage';
 import CoursePage from './components/pages/CoursePage';
 import PagesNavbar from './components/widgets/PagesNavbar/index';
+import Footer from './components/widgets/Footer';
 const App = () => {
   const [data , setdata] = useState([]);
   const [searchText , setSearchText] = useState("");
@@ -16,6 +17,13 @@ const App = () => {
           setdata(json);
         });
     },[url])
+  if(data.length === 0){
+    return (
+      <div className="spinner">
+        <Spinner animation="border"/>
+      </div>
+    )
+  }
   return (
     <div className='app'>
       <PagesNavbar setSearchText = {setSearchText}/>

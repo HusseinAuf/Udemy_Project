@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import StarsRating from "../StarsRating";
 const CoursePageHeader = ({data}) =>{
     let {courseId} = useParams();
+    const getDiscount = (price , originalPrice) =>{
+        return Math.round(100 - (parseInt(price)*100/parseInt(originalPrice)));
+    }
     return (
         <div className="course-header">
             <div className="topic-menue">
@@ -18,7 +21,6 @@ const CoursePageHeader = ({data}) =>{
                 className="preview-img"
             />
             <span className="course-title">{data[courseId]["title"]}</span>
-            {/* <span className="test"> sdfs</span> */}
             <p className="course-introduction">{data[courseId]["Introduction"]}</p>
             <div className="details">
                 <div className="rating-info">
@@ -48,16 +50,34 @@ const CoursePageHeader = ({data}) =>{
                     </span>
                 </div>
                 <div className="info">
-                    <span><i className="fa fa-exclamation-circle icon"></i></span>
-                    <span className="last-update">Last updated {data[courseId]["lastUpdate"]}</span>
-
-                    <span><i className="fa fa-globe icon"></i></span>
-                    <span className="language"> {data[courseId]["globe"]}</span>
-
-                    <span><i className="fa fa-cc icon"></i></span>
-                    <span className="subitile"> {data[courseId]["Captioning"]}</span>
+                    <span>
+                        <span><i className="fa fa-exclamation-circle icon"></i></span>
+                        <span className="last-update">Last updated {data[courseId]["lastUpdate"]}</span>
+                    </span>
+                    <span>
+                        <span><i className="fa fa-globe icon"></i></span>
+                        <span className="language"> {data[courseId]["globe"]}</span>
+                    </span>
+                    <span>
+                        <span><i className="fa fa-cc icon"></i></span>
+                        <span className="subitile"> {data[courseId]["Captioning"]}</span>
+                    </span>
 
                 </div>
+
+                <span className="price-details">
+                    <span className="price">E£{data[courseId]["price"]}</span>
+                    <span className="original-price">E£{data[courseId]["originalPrice"]}</span>
+                    <span className="discount">{getDiscount(data[courseId]["price"] , data[courseId]["originalPrice"])}% off</span>
+                </span>
+                <button className="add-to-cart">Add to cart</button>
+                <div className="money-back">30-Day Money-Back Guarantee</div>
+                <div className="share">
+                    <span>Share</span>
+                    <span>Gift this course</span>
+                    <span>Apply Coupon</span>
+                </div>
+
             </div>
         </div>
     );

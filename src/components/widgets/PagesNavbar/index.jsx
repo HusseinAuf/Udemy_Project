@@ -1,14 +1,17 @@
 
 import "../../../styles/PagesNavbar.css";
 import { useState , useContext } from "react";
+import { useNavigate } from "react-router-dom";
 const PagesNavbar = ({setSearchText}) => {
     const [searchChange , setSearchChange] = useState("");
+    let navigate = useNavigate();
     return (
         <div className="nav--bar">
             <img
                 className="udemy-icom"
                 src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
                 alt="udemy icom"
+                onClick={() => {navigate('/')}}
             />
             <a className="op">Catagories</a>
             <form className="search">

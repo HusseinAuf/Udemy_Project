@@ -18,6 +18,7 @@
 .udemy-icom {
   height: 31px;
   margin-right: 10px;
+  cursor: pointer;
 }
 /* styling navlist anchor element */
 .op {
