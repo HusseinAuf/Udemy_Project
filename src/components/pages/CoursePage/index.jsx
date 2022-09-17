@@ -28,7 +28,7 @@ const CoursePage = ({data}) => {
             <Instructor data={data}/>
             <StudentFeedback data={data}/>
             <Reviews data={data}/>
-            <Footer/>
+            <Footer homePage = {0}/>
         </div>
     );
 }

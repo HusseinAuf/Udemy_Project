@@ -3,7 +3,6 @@ import StarsRating from "../StarsRating";
 import { useNavigate } from "react-router-dom";
 const CoursesCards = ({data , searchText}) =>{
     let navigate = useNavigate();
-    console.log(searchText);
     return (
         <div className="courses-list">
         {

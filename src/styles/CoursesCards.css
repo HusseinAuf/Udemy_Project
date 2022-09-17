@@ -26,15 +26,25 @@
   }
   .course .rating  {
     color: rgb(180,105,14);
+    display: block;
     font-family: "udemy sans", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
     font-size: 20px;
     font-weight: 700;
     line-height: 0px;
     margin-left:20px;
+    margin-top: 15px;
 }
-.course .rating .stars-rating {
-    font-size: 15px;
-}
+  .course .rating .number-rating{
+     /* margin-top: 20px; */
+     display: inline-block;
+     margin-right: 8px;
+  }
+  .course .rating .stars-rating {
+      font-size: 15px;
+      display: inline-block;
+      line-height: 0px;
+            
+  }
   .course .price{
     margin:10px 20px;
     font-weight: 700;

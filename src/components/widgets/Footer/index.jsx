@@ -2,15 +2,15 @@ import "../../../styles/Footer.css";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useInView } from 'react-intersection-observer';
-const Footer = ({data}) => {
+const Footer = ({data , homePage}) => {
     let {courseId} = useParams();
     const { ref: myRef, inView: isImagVisible } = useInView();
     useEffect(() => {
-        if(isImagVisible){
+        if(!homePage && isImagVisible){
             const courseCard = document.querySelector('.course-card .details');
             courseCard.style.position = "static";
         }
-        else{
+        else if (!homePage){
             const courseCard = document.querySelector('.course-card .details');
             courseCard.style.position = "fixed";
             courseCard.style.top = "4px";

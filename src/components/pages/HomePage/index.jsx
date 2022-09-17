@@ -6,6 +6,7 @@ import MainHeader from "../../widgets/MainHeader";
 import CoursesMainHeader from "../../widgets/CoursesMainHeader";
 import CoursesHeaderForTopics from "../../widgets/CoursesHeaderForTopics";
 import CoursesCards from "../../widgets/CoursesCards";
+import Footer from '../../widgets/Footer';
 import {python_header} from '../../../constants/db.js'
 const HomePage = ({data , searchText}) => {
     //  console.log(data.length);
@@ -28,6 +29,7 @@ const HomePage = ({data , searchText}) => {
                     }
                 </div>
             </section>
+            <Footer homePage = {1}/>
         </div>
     );
 }
